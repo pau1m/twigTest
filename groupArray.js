@@ -13,7 +13,7 @@ const groupArray = (arrayToGroup, numberOfGroups) => {
     return;
   }
 
-  const numItemsInGroup = (arrayToGroup.length / numberOfGroups);
+  const numItemsInGroup = Math.floor(arrayToGroup.length / numberOfGroups);
   const hasRemainder = (arrayToGroup.length % numberOfGroups !== 0);
 
   let groupedArray = [];
