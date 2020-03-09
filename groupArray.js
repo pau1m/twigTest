@@ -3,8 +3,8 @@
  * Last array element may absorb remaining values.
  * Note: Pretty sure this code could be done in (almost) one line :/
  *
- * @param Array: arrayToGroup An array of integers to group in to arrays
- * @param Integer: groupSize The length of the new array grouping
+ * @param arrayToGroup Array: An array of integers to group in to arrays
+ * @param numberOfGroups Integer: The length of the new array grouping
  */
 const groupArray = (arrayToGroup, numberOfGroups) => {
 
@@ -13,19 +13,19 @@ const groupArray = (arrayToGroup, numberOfGroups) => {
     return;
   }
 
-  const numItemsInGroup = arrayToGroup.length / numberOfGroups;
+  const numItemsInGroup = (arrayToGroup.length / numberOfGroups);
   const hasRemainder = (arrayToGroup.length % numberOfGroups !== 0);
 
   let groupedArray = [];
 
   // Move values over to our new array.
-  for (let i=0; i < numberOfGroups; i++) {
+  for (let i=0; i<numberOfGroups; i++) {
     groupedArray.push(arrayToGroup.splice(0, numItemsInGroup));
   }
 
   // Shunt any remaining elements from the original array in to the last element of our new array.
   if (hasRemainder) {
-    groupedArray[numberOfGroups -1] = groupedArray[numberOfGroups -1 ].concat(arrayToGroup);
+    groupedArray[numberOfGroups -1] = groupedArray[numberOfGroups -1].concat(arrayToGroup);
   }
 
   return groupedArray;
