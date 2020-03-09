@@ -6,7 +6,7 @@
  * @param Array: arrayToGroup An array of integers to group in to arrays
  * @param Integer: groupSize The length of the new array grouping
  */
-groupArray = (arrayToGroup, numberOfGroups) => {
+const groupArray = (arrayToGroup, numberOfGroups) => {
 
   if (numberOfGroups <= 0 || numberOfGroups > arrayToGroup.length) {
     console.error(' Number of groups must be greater than 1 and no longer than length of passed array');
