@@ -1,0 +1,8 @@
+{
+  "name": "twigTest",
+  "version": "0.0.1",
+  "description": "Interview test for twig",
+  "main": "index.js",
+  "author": "Paul Miller",
+  "license": "MIT"
+}
