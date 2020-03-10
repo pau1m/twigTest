@@ -21,3 +21,5 @@ That leaves 3 elements [1,2,3] which cannot be divided equally.
 
 This could only work if we interpret "the final part" as an addendum to the array of equally divided parts, thus giving four parts eg [[1], [2], [3], [4,5]]
 
+
+The solution I originally provided was derived from misreading the text as "the last element should contain the remaining elements"
