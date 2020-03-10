@@ -16,4 +16,4 @@ We are supposed to split the array in to 3 equal parts with the last part having
 
 
 5%3 = 2. So last length of last array must be 2 giving [4,5]. 
-That leaves [1,2,3] which cannot be divided equally.
+That leaves 3 elements [1,2,3] which cannot be divided equally.
