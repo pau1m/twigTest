@@ -9,7 +9,7 @@ After writing this I realise the problem is not solvable. The example provided d
 the specification (and neither does my code).
 
 
-Given an array [1,2,3,4,5] and a divisor 3. 
+Given an array of 5 elements [1,2,3,4,5] and a divisor 3. 
 
 
 We are supposed to split the array in to 3 equal parts with the last part having an array length of the modulo.
